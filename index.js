@@ -14,7 +14,7 @@ app.use(express.json());
 
 dotenv.config();
 
-const PORT = process.env.PORT || 4000;
+const PORT = 4000;
 const URI = process.env.MongoDBURI;
 
 // connect to mongoDB
@@ -40,6 +40,6 @@ if(process.env.NODE_ENV === "production") {
     })
 }
 
-app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`);
+app.listen(4000, () => {
+    console.log(`Server is listening on port 4000`);
 });
